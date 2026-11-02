@@ -1,0 +1,25 @@
+/* вопросы */
+.faq{border-top:1px solid var(--line);margin-top:6px}
+.faq details{border-bottom:1px solid var(--line2)}
+.faq summary{cursor:pointer;list-style:none;padding:16px 42px 16px 0;position:relative;font-weight:700;font-size:1.02rem;font-family:var(--fb)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:10px;top:13px;font-family:var(--f);font-size:1.3rem;color:var(--pine);line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq .a{padding:0 0 18px;color:var(--ink2);max-width:76ch}
+/* контакты */
+.cont{background:var(--ink);color:#e7eae8;padding:clamp(48px,6.6vw,92px) 0}
+.cg{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(24px,3.8vw,56px);align-items:start}
+.cont h2{color:#fbfbf9;margin-bottom:14px;max-width:20ch}
+.cont .kick{color:#8ec4b3}
+.cont p{color:#bcc2bf}
+.phone{display:inline-block;font-family:var(--f);font-size:clamp(1.6rem,3.4vw,2.3rem);font-weight:600;letter-spacing:-.01em;color:#fff;margin:8px 0 6px;font-variant-numeric:tabular-nums;border-bottom:1px solid rgba(255,255,255,.3);padding-bottom:4px;transition:border-color .2s var(--ease),color .2s}
+.phone:hover{border-color:#fff}
+.cont .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.cbox{border:1px solid rgba(255,255,255,.16);border-radius:var(--r);padding:clamp(16px,2.4vw,24px)}
+.cbox dl{display:grid;gap:13px}
+.cbox dt{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:#96a09b;margin-bottom:2px}
+.cbox dd{font-size:.98rem;color:#e7eae8}
+footer{background:#0d1013;color:#8b938f;font-size:.84rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;padding:20px 0}
+footer a:hover{color:#c6ccc8}
+@media (max-width:900px){.cg{grid-template-columns:1fr}}

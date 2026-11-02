@@ -1,0 +1,67 @@
+<section class="blk alt" id="pick"><div class="wrap">
+  <div class="sec">
+    <h2>Подберите оснастку под задачу</h2>
+    <p>Выберите, что нужно сделать: покажем, какой ковш или бур под это берут, какой ширины будет траншея и на какую глубину копаем.</p>
+  </div>
+  <div class="pick">
+    <div>
+      <div class="tasks-chips" id="tchips" role="group" aria-label="Тип работы"></div>
+      <figure class="cut">
+        <svg class="cut-svg" viewBox="0 0 420 250" role="img" aria-labelledby="cutTitle cutDesc">
+          <title id="cutTitle">Разрез траншеи</title>
+          <desc id="cutDesc">Схема: ширина траншеи под выбранный ковш, глубина до 2,4 метра.</desc>
+          <rect x="0" y="96" width="420" height="154" fill="#dfd4c1"/>
+          <rect x="0" y="128" width="420" height="122" fill="#c9bca6"/>
+          <path d="M0 96h420" stroke="#14171a" stroke-opacity=".5" stroke-width="1.5"/>
+          <rect id="tr" x="197" y="96" width="26" height="132" fill="#8a7f6d"/>
+          <g stroke="#14171a" stroke-opacity=".55" fill="none" stroke-width="1">
+            <path id="wDim" d="M197 78h26" stroke-dasharray="3 3"/>
+            <path id="wTickL" d="M197 72v12"/><path id="wTickR" d="M223 72v12"/>
+            <path d="M366 96v132" stroke-dasharray="3 3"/>
+            <path d="M360 96h12"/><path d="M360 228h12"/>
+          </g>
+          <g font-family="Rubik, sans-serif" font-size="11" fill="#14171a">
+            <text id="wTex" x="210" y="66" text-anchor="middle">20 см</text>
+            <text x="380" y="166" text-anchor="middle">2,4 м</text>
+            <text x="14" y="90" font-size="9.5" fill="#474d4b" letter-spacing="1">УРОВЕНЬ ЗЕМЛИ</text>
+          </g>
+        </svg>
+        <figcaption id="cutCap">Ширина траншеи под ковш 20 см. Глубина — до 2,4 м, точную берём из проекта.</figcaption>
+      </figure>
+    </div>
+    <div class="reco" id="reco" aria-live="polite">
+      <div class="tool"><b id="rTool">Ковш 20 см</b><span id="rKind">ковш</span></div>
+      <p class="why" id="rWhy"></p>
+      <dl>
+        <div><dt>Ширина</dt><dd id="rW">20 см</dd></div>
+        <div><dt>Глубина</dt><dd id="rD">до 0,8 м</dd></div>
+        <div><dt>Зачем</dt><dd id="rUse">кабель, связь</dd></div>
+        <div><dt>Что важно</dt><dd id="rNote">минимум вскрытия</dd></div>
+      </dl>
+      <a class="btn btn-acc go" id="rCall" href="tel:+375293967600">Спросить по этой задаче</a>
+    </div>
+  </div>
+</div></section>
+
+<section class="blk" id="tools"><div class="wrap">
+  <div class="sec">
+    <h2>Вся оснастка</h2>
+    <p>Ширина ковша определяет, сколько грунта вскрываем и сколько потом засыпать. Бур делает узкую яму под опору без траншеи.</p>
+  </div>
+  <div class="tblwrap">
+    <table class="tbl">
+      <thead><tr><th>Оснастка</th><th>Для чего берут</th><th>Глубина</th></tr></thead>
+      <tbody>
+        <tr><td>Ковш 20 см</td><td>кабель, связь, полив — узкая траншея с минимумом вскрытия</td><td>по проекту</td></tr>
+        <tr><td>Ковш 30 см</td><td>вода, газ, дренаж — самый ходовой размер</td><td>по проекту</td></tr>
+        <tr><td>Ковш 40 см</td><td>канализация, траншея под ленту, отвод воды</td><td>по проекту</td></tr>
+        <tr><td>Ковш 60 см</td><td>фундамент, выемка грунта под пристройку</td><td>по проекту</td></tr>
+        <tr><td>Ковш 100 см<small>планировочный</small></td><td>планировка, зачистка дна, выборка больших объёмов</td><td>по проекту</td></tr>
+        <tr><td>Гидробур 200 мм</td><td>столбы забора, опоры навеса, лёгкие сваи</td><td>до 2,4 м</td></tr>
+        <tr><td>Гидробур 250 мм</td><td>столбы под тяжёлый забор, перголы</td><td>до 2,4 м</td></tr>
+        <tr><td>Гидробур 300 мм</td><td>винтовые сваи, опоры навесов и террас</td><td>до 2,4 м</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="margin-top:16px;color:var(--ink3);font-size:.9rem">Глубину в таблице не пишем цифрой: у траншеи она берётся из проекта, у бура ограничена 2,4 м — это предел машины.</p>
+</div></section>
